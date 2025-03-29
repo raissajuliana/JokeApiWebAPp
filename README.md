@@ -1,5 +1,7 @@
 # Programming Joke Generator 🚀
 
+https://github.com/user-attachments/assets/4fd99a88-69db-492a-afa1-a6f6d6ea481e
+
 > This is a simple web application that generates a programming joke with the user's name.
 
 ## Prerequisites
