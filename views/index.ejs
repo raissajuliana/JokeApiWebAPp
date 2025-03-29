@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Programming Joke Generator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Get a programming Joke, <%= name || 'Friend' %>!</h1>
+
+            <form action="/joke" method="POST">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <button type="submit">Get a Joke!</button>
+            </form>
+
+            <% if (joke) { %>
+                <div class="joke">
+                    <p><strong><%= name %>:</strong> <%= joke %></p>
+                </div>
+            <% } %>
+        </div>
+    </body>   
+</html>
